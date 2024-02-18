@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grain storage</title>
+
+<link href="./css/site.css" rel="stylesheet">
+<script src="./js/spaghettiwiththreetrickybugs.js"></script>
+</head>
+<body>
+    <h1>Problem specification:</h1>
+    <p>We can buy wheat and corn at a grain storage company. One tonne of wheat is 200 euros and one tonne of corn is 180 euros. The company also undertakes “home delivery”.</p>
+    <p>A truck can hold 40 tons of grain, but only from one variety. If we order at least 200 tons of one type of grain, it has no shipping costs, otherwise it is 250 euros / truck. If we order at least 300 tons of both grains together, the shipping cost is free. For orders over 1000 tons, we get a 2% discount on the total cost. If we have a loyalty card, we are entitled to a 5% discount on the price of the grain. We can pay in advance by credit card, in this case there is no bonus, or we can pay with cash on delivery, but it comes at an extra cost of 200 €.</p>
+    <p>We need to buy at least 20 tons of a given type of grain.</p>
+
+    <h2>Calculator:</h2>
+    
+    <p>
+        <input type="checkbox" id="credit-check" >
+        <label for="wheat-check"> Pay with credit card </label>
+    </p>
+    <p>
+        <input type="checkbox" id="loyality-check" >
+        <label for="wheat-check"> Loyality card </label>
+    </p>
+    <p>
+        <label for=""> Wheat quantity</label>
+        <input size="8px" id="wheat-weight">
+    </p>
+    <p>
+        <label for=""> Corn quantity</label>
+        <input size="8px" id="corn-weight">
+    </p>
+    <button class="button" id="calculate" onclick="myFunction()"> Calculate! </button>
+
+    <p>
+        Calculated price:
+        <input size="13px" id="calculated-price">
+    </p>
+</body>
+</html>
